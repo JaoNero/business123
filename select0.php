@@ -1,10 +1,10 @@
 <?php
-require "connect.php";
+require "connect.php"; //สร้างเส้นเชื่อมต่อ
 // ลองให้โชว์ข้อมูล customer
-$sql = "SELECT * FROM customer";
+$sql = "SELECT * FROM customer"; //คำสั่ง
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 
 
-$result = $stmt->fetchAll();
-print_r($result);
+$result = $stmt->fetchAll(); //ดึงข้อมูลทั้งหมด
+print_r($result); //แสดงผล
