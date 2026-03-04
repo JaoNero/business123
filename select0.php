@@ -6,5 +6,5 @@ $stmt = $conn->prepare($sql);
 $stmt->execute();
 
 
-$result = $stmt->fetchAll(); //ดึงข้อมูลทั้งหมด
+$result = $stmt->fetchAll(); //ดึงข้อมูลทั้งหมด //fetchดึงละแสดงที่ละอัน
 print_r($result); //แสดงผล
