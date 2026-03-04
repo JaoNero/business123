@@ -18,8 +18,8 @@
 
     $conn = null;
     ?>
-    <table width="800" border="1">
-        <tr>
+    <table width="800" border="1">//ถ้าเป็น0จะจัดในรูปแบบตารางแต่ไม่มีเส้น
+        <tr>//ขึ้นบรรทัดใหม่
             <th width="90">
                 <div align="center">รหัสผู้ใช้ </div>
             </th>
@@ -45,7 +45,7 @@
         ?>
 
             <tr>
-                <td>
+                <td>//คอลลัม
 
                     <?php echo $result["CustomerID"]; ?>
 
@@ -65,7 +65,7 @@
             </tr>
 
         <?php
-        }
+        }//กลับไปลูปใหม่
         ?>
 
     </table>
